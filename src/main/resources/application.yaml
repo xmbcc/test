@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sop?serverTimezone=UTC
+    username: root
+    password: a74898324646
+
+
+mybatis:
+  configuration:
+    log-impl=org:
+      apache:
+        ibatis:
+          logging:
+            stdout:
+              StdOutImpl:
