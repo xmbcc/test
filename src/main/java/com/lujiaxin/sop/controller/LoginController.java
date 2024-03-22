@@ -40,7 +40,7 @@ public class LoginController {
             return R.login(map, 200,true);
         }
 
-        return R.fail(CommonsCode.REQ_FIAL_CODE,false);
+        return R.fail(CommonsCode.REQ_FIAL_CODE,false,"登陆失败");
 
     }
 

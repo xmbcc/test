@@ -109,6 +109,12 @@ public class R {
         return new R(msg,data,code,count,success);
     }
 
+    public R(Integer code, Boolean success, String msg) {
+        this.msg = msg;
+        this.code = code;
+        this.success = success;
+    }
+
     public static R successs(Object data, Integer code, Integer count){
         return new R(data,code,count,true);
     }
@@ -117,8 +123,8 @@ public class R {
         return new R(data,code,success);
     }
 
-    public static R fail(Integer code,Boolean success){
-        return new R(code,success);
+    public static R fail(Integer code,Boolean success,String message){
+        return new R(code,success,message);
     }
 
 
